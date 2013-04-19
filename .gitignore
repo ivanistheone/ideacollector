@@ -1,0 +1,64 @@
+# proj specific 
+ExtCode/
+
+
+
+# general
+.DS_Store
+
+*.py[cod]
+
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# latex ignores
+*.swp
+*.m~
+
+*.vrb
+*.aux
+*.end
+*.bbl
+*.blg
+*.log
+*.toc
+*.synctex.gz
+*.out
+*.nav
+*.snm
+*.lot
+*.lof
+*.thm
+

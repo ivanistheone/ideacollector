@@ -1,0 +1,435 @@
+
+
+/* Body
+-------------------------------------------------- 
+Color scheme:
+
+
+
+
+*/
+body {
+  margin: 0;
+  padding: 60px 20px;
+  font: 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: transparent;
+}
+html {
+  background: #4786b3; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg0KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPg0KICA8cmFkaWFsR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI3NSUiPg0KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM0Nzg2YjMiIHN0b3Atb3BhY2l0eT0iMC43Ii8+DQogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNjI3ODk0IiBzdG9wLW9wYWNpdHk9IjAuOTQiLz4NCiAgPC9yYWRpYWxHcmFkaWVudD4NCiAgPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPg0KPC9zdmc+);
+
+  background: -moz-radial-gradient(center, ellipse cover,  #4786b3 0%, #2e5673 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4786b3), color-stop(100%,#2e5673)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #4786b3 0%,#2e5673 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #4786b3 0%,#2e5673 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #4786b3 0%,#2e5673 100%); /* IE10+ */
+  background: radial-gradient(center, ellipse cover,  #4786b3 0%,#2e5673 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4786b3', endColorstr='#2e5673',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  *background-image: none; /* Reset for IE7 to avoid mixed content warnings */
+}
+ol, ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Links
+------------------------- */
+a { color: #0084b4; text-decoration: none; outline: 0; }
+a:hover, a:focus { text-decoration: underline; }
+p a { line-height: inherit; }
+
+/* Forms and buttons
+------------------------- */
+/* reset font and size */
+.btn,
+input[type=text] {
+  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Text inputs */
+input[type=text] {
+  display: inline-block;
+  width: 210px;
+  padding: 4px; /* make fields 30px tall, add 10px to width for easier sizing */
+  margin: 0;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.075);
+     -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.075);
+          box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.075);
+  -webkit-transition: .2s linear background;
+     -moz-transition: .2s linear background;
+          transition: .2s linear background;
+}
+input[type=text]:focus {
+  outline: 0;
+  color: #333;
+  border-color: #56b4ef; /* Not a user color preference */
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 0 8px rgba(82,168,236,.6);
+     -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 0 8px rgba(82,168,236,.6);
+          box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 0 8px rgba(82,168,236,.6);
+}
+
+/* Buttons */
+.btn {
+  position: relative;
+  display: inline-block;
+  overflow: visible; /* Removes odd padding for IE7 */
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  border-radius: 0 \0; /* Remove border-radius from buttons for IE9 */
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.25);
+     -moz-box-shadow: 0 1px 0 rgba(255,255,255,.25);
+          box-shadow: 0 1px 0 rgba(255,255,255,.25);
+  background-color: #dddddd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+  background-image: -moz-linear-gradient(#ffffff, #dddddd);
+  background-image: -ms-linear-gradient(#ffffff, #dddddd); /* IE 10+ - ha! */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+  background-image: -o-linear-gradient(#ffffff, #dddddd);
+  background-image: linear-gradient(#ffffff, #dddddd);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd'); /* IE6-9 */
+}
+/* Default hover */
+.btn:hover {
+  text-decoration: none;
+  background-color: #d8d8d8;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f8f8f8), to(#d8d8d8));
+  background-image: -moz-linear-gradient(#f8f8f8, #d8d8d8);
+  background-image: -ms-linear-gradient(#f8f8f8, #d8d8d8);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f8f8), color-stop(100%, #d8d8d8));
+  background-image: -webkit-linear-gradient(#f8f8f8, #d8d8d8);
+  background-image: -o-linear-gradient(#f8f8f8, #d8d8d8);
+  background-image: linear-gradient(#f8f8f8, #d8d8d8);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* Remove IE gradient so dropdown is visible */
+  border-color: #bbb;
+}
+/* Active button state */
+.btn:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0 .1), 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.05);
+}
+
+
+/* Global top navigation
+-------------------------------------------------- */
+
+/* Topbar
+------------------------- */
+.topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+     -moz-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+          box-shadow: 0 2px 3px rgba(0,0,0,.25);
+}
+
+/* Set the height for the divs here for applying effects and styles */
+.global-nav,
+.global-nav-outer {
+  height: 40px;
+}
+/* levels of topbar for background effects */
+.global-nav {
+  position: relative;
+  width: 100%;
+}
+/* move the nav to the edge of the container so it looks super hawt */
+.global-nav .container {
+  width: auto;
+  max-width: 865px;
+  margin: 0 auto;
+}
+
+/* Navigation
+------------------------- */
+.nav,
+.nav > li {
+  float: left;
+}
+.nav {
+  margin-right: 12px;
+}
+/* set position relative for dropdowns mostly */
+.nav li {
+  position: relative;
+  display: inline;
+}
+/* topbar links */
+.nav li a {
+  position: relative;
+  font-size: 12px;
+  color: #bbb;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.75);
+}
+.nav li > a {
+  display: block;
+  padding: 13px 12px 15px;
+  font-weight: bold;
+  line-height: 1;
+}
+.nav > li > a {
+  height: 12px;
+}
+/* Logged out logo nav (make bird line up with white container below) */
+.nav > li > .nav-logo-link {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+/* hover and active states */
+.nav .active > a,
+.nav li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/* Active state */
+.nav .active > a,
+.nav .active > a:hover,
+.nav .dropdown.open .dropdown-toggle {
+  background-color: #222;
+  -webkit-box-shadow: inset 0 5px 10px rgba(0,0,0,.5);
+     -moz-box-shadow: inset 0 5px 10px rgba(0,0,0,.5);
+          box-shadow: inset 0 5px 10px rgba(0,0,0,.5);
+}
+
+/* Icons for each nav item */
+.nav i {
+  float: left;
+  margin: -4px 6px 0 0;
+}
+
+/* Float secondary nav ul to the right */
+.secondary-nav {
+  float: right;
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+/* Backgrounds
+------------------------- */
+.global-nav {
+  background-color: #252525;
+  background-image: url(twitter_web_sprite_bgs.png);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+
+/* Icons
+------------------------- */
+i {
+  display: inline-block;
+  vertical-align: text-top;
+  background-image: url(twitter_web_sprite_icons.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+  /* Twitter logos
+  ------------------------- */
+  /* Stream end bird */
+  .bird-etched                      { background-position: 0      0; width: 34px; height: 26px; }
+
+  /* Topbar birds */
+  .bird-topbar-etched,
+  .bird-topbar-blue,
+  .bird-topbar-white                { width: 24px; height: 21px; }
+  .bird-topbar-etched               { background-position: -40px  0; }
+  .bird-topbar-blue                 { background-position: -80px  0; }
+
+  /* Non-app topbar */
+  /* Extra styles here for the blue corpbar since we only import this file into that old Rails layout */
+  .bird-corpbar,
+  .bird-topbar-phx                  { float: left; padding: 7px 20px 9px; }
+  .bird-corpbar:hover,
+  .bird-topbar-phx:hover            { background-color: rgba(255,255,255,.1); }
+  /* White bird itself */
+  .bird-topbar-white                { background-position: -120px 0; }
+
+
+
+/*  Robots, Whales, & Moan Cones
+-------------------------------------------------- */
+/* wrapper */
+.canvas {
+  display: block;
+}
+/* whale, robot, cone */
+.illustration {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+/* fixed waves */
+.whale-water {
+  background: transparent url(whale_water.png) repeat-x bottom left;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  height: 50px;
+}
+
+/* Heading, body, links
+------------------------- */
+.body-content {
+  max-width: 865px;
+  margin: 0 auto;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+h1,
+p {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  margin: 30px 0 0;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+p,
+label {
+  margin: 10px 0 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #e0eff6;
+}
+p a {
+  font-weight: bold;
+  color: #fff;
+}
+
+
+/* 404 search form */
+.search-404 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.search-404 #search_label {
+  display: none;
+  display: block \9; /* only show for IE */
+  margin: 0 0 9px;
+  text-align: center;
+}
+.search-404 .btn,
+.search-404 input[type=text] {
+  padding: 9px;
+  font-size: 18px;
+  vertical-align: middle;
+  border-color: #1c5671;
+}
+.search-404 .btn {
+  padding: 10px 14px;
+  *padding: 7px 14px 6px;
+  line-height: 20px;
+}
+.search-404 input[type=text] {
+  width: 410px;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.25);
+     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.25);
+          box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.25);
+}
+.search-404 input[type=text]:focus {
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 0 10px rgba(255,255,255,.75);
+     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 0 10px rgba(255,255,255,.75);
+          box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 0 10px rgba(255,255,255,.75);
+}
+
+/* Footer links */
+.footer {
+  margin: 0 10%;
+  text-align: center;
+  font-size: 11px;
+}
+.footer ul {
+  margin-bottom: 5px;
+}
+.footer li {
+  display: inline;
+  margin: 0 5px;
+  line-height: 20px;
+}
+.footer li,
+.footer a {
+  color: #cce3ed;
+}
+.footer a:hover {
+  color: #fff;
+}
+
+
+/* Responsive layout
+-------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+  /* Move waves down on smartphones */
+  .whale-water {
+    margin-bottom: -10px;
+  }
+  /* punt button to below search field */
+  .search-404 input[type=text] {
+    display: block;
+    width: 90%;
+    margin: 0 auto 10px;
+  }
+  /* widen search button */
+  .search-404 .btn {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+
+/* For screens larger than the minimum dimensions, bump up the illustration size and fix to bottom of screen */
+@media screen and (min-width: 640px) and (min-height: 700px) {
+  .canvas {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+  }
+  .illustration {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    padding: 60px;
+  }
+}
+
+
