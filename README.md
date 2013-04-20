@@ -7,17 +7,20 @@ A web app for collecting your business ideas.
 Usage
 -----
 
-Download to a folder on your computer and open `ideas/index.html`.
+Clone the repo to your computer or visit [http://ivanistheone.github.io/ideacollector/](http://ivanistheone.github.io/ideacollector/).
 
 
 
 TODO
 ----
 
-Continue with the tutorial instead of doing PR.
-
-Git would not add the commits because they are already in the repo!
-Sorry i take that back git is good.
+  - Smoother integration with speech
+  - Type of project selection:
+    - Business
+    - Community project
+    - Technological building block
+  - Combine with [backbone-multi-step code](https://github.com/michaelkoper/backbone-multistep-form/tree/master/app/assets/javascripts/wizard).
+  - Announce on HN?
 
 
 
