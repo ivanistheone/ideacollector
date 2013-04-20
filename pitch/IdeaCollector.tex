@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1.2in]{geometry}
+%\usepackage{supertabular}
+%\usepackage{setspace}
+%\doublespacing
+%\usepackage{graphicx}
+\usepackage{hyperref}
+
+
+\newcommand{\company}[1]{\verb|#1|}
+\newcommand{\software}[1]{\verb|#1|}
+\newcommand{\term}[1]{{\ttfamily #1}}
+\newcommand{\project}[1]{\texttt{#1}}
+\newcommand{\comment}[1]{ [ \textit{#1} ] }
+
+
+\author{Ivan Savov}
+\title{ {\Huge Idea collector } }
+
+\begin{document}
+\maketitle
+
+\abstract{	
+    A scripted series of questions that can help someone hooked up on ``brain crack''\cite{ze} clarify his thoughts. The script collects general info like title, authors and tags and then asks a number of questions depending on the ``type'' of idea. Can be distributed as a standalone python script or some web interface.
+}
+
+{\bf keywords: } entrepreneurship, python, startup, 
+
+
+\section{Previous technology}
+
+	There are many sites for project management I am sure.
+	
+    
+\section{New technology}
+
+	Script that forces you to think about all the different aspects of your idea, not just
+	the ones you tend to think about.
+	
+	There is a possibility you can make the script very intelligent connecting many sources
+	of information so that you can manage your ideas more easily.	
+	
+	\begin{itemize}
+		\item 	Create a ``folder'' for your idea (verison control?)
+		\item	Create beautiful latex doc from your proj
+		\item	Create a simple dokuwiki for your project
+		\item 	If you allow it to touch your bookmarks folder, the script can automatically ``guess'' which
+				of the links you saved are relevant and include them in the references section.
+		\item	When it asks you for {\bf what is next?} it can set reminders for you and bug you if 
+				you aren't working on your idea.
+	\end{itemize}
+	
+	
+	Ideally there will be pluggable modules of \term{questions}, \term{actions} and 
+	\term{workflows} that can be user contributed and shared.
+	
+	
+\section{Why is it better?}
+
+	The main advantage is that the series of questions act as a template for your thinking. 
+	I \emph{really} need this kind of template right now to organize my projects so I assume
+	that other people will be interested in such a product.
+	
+    
+\section{Next steps}
+ 
+ 
+ 
+ \begin{thebibliography}{bcrack}
+%
+%
+\bibitem[ze]{ze}   ze frank show \textit{Where do ideas come from?}\\
+                           \url{http://www.zefrank.com/theshow/archives/2006/07/071106.html}
+%
+\end{thebibliography}
+
+\end{document}
