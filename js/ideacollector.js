@@ -22,6 +22,7 @@ App.CurrentQuestionView = Backbone.View.extend({
 
     initialize: function(options) {
         this.prompt = options.prompt;
+        this.nextquestions = options.list_of_questions;         // the array of questions to ask. nextQuestion iterates over this
 
         // timer
         this.TIME_TO_ANSWER = 40;
@@ -59,8 +60,8 @@ App.CurrentQuestionView = Backbone.View.extend({
         }
 
         // setup the question prompt and render
-        if (this.questionIndex < App.questions_data["business"].length ){
-            this.prompt = App.questions_data["business"][this.questionIndex];
+        if (this.questionIndex < this.nextquestions.length ){
+            this.prompt = this.nextquestions[this.questionIndex];
             this.render();
         } else {
             //kill the view

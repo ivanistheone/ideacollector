@@ -21,7 +21,7 @@ App.questions_data = {
                         "How will you deal with problematic people?",
                         "Will you want to work on this in 1y, 2y, 5y?",
                         "Has it been done before?" ],
-    "bblcok":       [   "Previous technology",
+    "bblock":       [   "Previous technology",
                         "New technology",
                         "Advantages",
                         "Technical details",

@@ -19,7 +19,7 @@
   <div id="ideacollectorapp">
 
     <header>
-      <h1>Business Idea Collector</h1>
+      <h1 id="projecttype">Business Idea Collector</h1>
 
       <p>
         Tech people often waste a lot of mental energy <em>thinking</em> about business ideas,
@@ -130,10 +130,27 @@
         console.log("Application starting...");
         var i,
             prompt,
-            currqview;
+            currqview,
+            questions_data;
+
+
+        console.log( window.location.hash );
+        // project type 
+        questions_data = App.questions_data["business"];
+        if (window.location.hash === "#community") { 
+          questions_data = App.questions_data["community"];
+          $("#projecttype").html("Community Project Idea Collector");
+        }
+        if (window.location.hash === "#bblock") {    
+          questions_data = App.questions_data["bblock"]; 
+          $("#projecttype").html("Building Block Idea Collector");
+        }
+
 
         //setup the current question view
-        App.currqview = currqview = new App.CurrentQuestionView({prompt:"What is your business idea?"});
+        App.currqview = currqview = new App.CurrentQuestionView({  prompt: "What is your business idea?",
+                                                                   list_of_questions: questions_data
+                                                                });
         App.currqview.nextQuestion();
         currqview.render();
 
