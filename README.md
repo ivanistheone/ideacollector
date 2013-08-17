@@ -1,6 +1,7 @@
 Idea Collector
 ==============
 
+
 Say you just had a new idea for a project you think would be cool.
 The script below will ask you some hard questions so that you can jot down your idea quickly.
 Don't worry about me stealing your ideas: everything is saved to ``localStorage``.
