@@ -44,12 +44,21 @@ TODO
 ----
 
   - Smoother integration with speech
-  - Type of project selection (redo with multistep):
+  - Type of project selection as step 1 of a multistep process
+    (see ExtCode/Wizard... ) and [backbone-multi-step code](https://github.com/michaelkoper/backbone-multistep-form/tree/master/app/assets/javascripts/wizard).
+    Step 1:
     - Business
     - Community project
     - Technological building block
-  - Combine with [backbone-multi-step code](https://github.com/michaelkoper/backbone-multistep-form/tree/master/app/assets/javascripts/wizard).
-  - Announce on HN?
+
+    Step 2: 
+    Ask ~10 questions from list.
+
+    Step 3:
+    Editor/export options.
+
+
+
 
 
 
