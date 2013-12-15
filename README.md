@@ -27,7 +27,7 @@ the app will start to make fun of you!
   - Business idea: http://ivanistheone.github.io/ideacollector/#business
 
 But perhaps your idea isn't a business---exactly---but more of a community project?
-The quesitons below could help you think about all aspects of the project and motivate 
+The questions below could help you think about all aspects of the project and motivate 
 you to get started.
 
   - Community project: http://ivanistheone.github.io/ideacollector/#community
@@ -37,6 +37,13 @@ For anyone who knows a scripting language (ok ok Java/C people you are invited t
 I give you a quick questionnaire of things to think about before you start coding.
 
   - Technological building block: http://ivanistheone.github.io/ideacollector/#bblock
+
+
+And for people writing research papers (that include poor graduate students),
+a few key questions regarding the future Nobel prize contender research you are
+about to publish.
+
+  - Research Paper: http://ivanistheone.github.io/ideacollector/#paper
 
 
 
@@ -50,15 +57,10 @@ TODO
     - Business
     - Community project
     - Technological building block
+    - Research Paper
 
     Step 2: 
     Ask ~10 questions from list.
 
     Step 3:
     Editor/export options.
-
-
-
-
-
-

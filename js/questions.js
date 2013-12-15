@@ -25,7 +25,16 @@ App.questions_data = {
                         "New technology",
                         "Advantages",
                         "Technical details",
-                        "Next steps" ]
+                        "Next steps" ],
+    "paper":        [   "What would be a draft title?",
+                        "Does it describe experiments, theories or other people's work?",
+                        "Where would you publish it?",
+                        "Have you publish there before?",
+                        "Do you have deadline for submission? Can you make it?",
+                        "Who definitely needs to read it?",
+                        "Why they should read it?",
+                        "Which keywords would you use to look for related work?",
+                        "If you were the reviewer, what'd be the quickest way to reject it?" ]
     };
 
 

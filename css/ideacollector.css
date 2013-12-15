@@ -177,8 +177,7 @@ div#current-question {
 
 
 
-
-#save-as {
+.save-as {
 	float: left;
 	line-height: 20px;
 	text-decoration: none;
@@ -201,7 +200,7 @@ div#current-question {
 	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
 }
 
-#save-as:hover {
+.save-as:hover {
 	background: #012299;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
 	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
@@ -210,7 +209,7 @@ div#current-question {
 	box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
 }
 
-#save-as:active {
+.save-as:active {
 	position: relative;
 	top: 1px;
 }

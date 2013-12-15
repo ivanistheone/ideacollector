@@ -43,7 +43,7 @@ App.CurrentQuestionView = Backbone.View.extend({
     },
 
     render: function() {
-      this.$el.html(this.template({prompt:this.prompt, response:"Enter ur answer here"}));
+      this.$el.html(this.template({prompt:this.prompt, response:"Enter your answer here"}));
       this.$("input").focus();
       // console.log("rendered ...");
       this.startTimer();
@@ -166,7 +166,7 @@ App.QuestionsList = Backbone.Collection.extend({
     // Reference to this collection's model.
     model: App.Question,
 
-    // Save all of the question items under the `"todos-backbone"` namespace.
+    // Save all of the question items under the `"ideacollector-dev3"` namespace.
     localStorage: new Backbone.LocalStorage("ideacollector-dev3"),
 
 
@@ -261,7 +261,8 @@ App.QuestionsView = Backbone.View.extend({
 
     events: {
         "click #clear-completed":   "destroyAll",
-        "click #save-as":           "exportAsTex"
+        "click #save-as-tex":       "exportAsTex",
+        "click #save-as":           "exportAsMarkdown"
     },
 
     // At initialization we bind to the relevant events on the `Questions`
@@ -331,13 +332,26 @@ App.QuestionsView = Backbone.View.extend({
         });
         doc += "\\end{document}\n\n";
 
-        //save as 
+        //save as
         var blob = new Blob([doc], {type: "application/x-tex;charset=utf-8"});
         saveAs(blob, "idea.tex");
 
+    },
+
+    exportAsMarkdown: function (event) {
+        var doc = "";
+        App.questions.forEach( function (model) {
+            doc += "# ";
+            doc += model.get("prompt");
+            doc += "\n";
+            doc += model.get("response");
+            doc += "\n\n";
+        });
+
+        //save as
+        var blob = new Blob([doc], {type: "text/plain;charset=utf-8"});
+        saveAs(blob, "idea.txt");
     }
-
-
 
   });
 
