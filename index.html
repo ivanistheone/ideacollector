@@ -61,7 +61,8 @@
 
 
     <footer>
-          <a id="save-as">Export as .tex</a>
+          <a id="save-as" class="save-as">Export as markdown</a>
+          <a id="save-as-tex" class="save-as">Export as .tex</a>
           &nbsp;
           <a id="clear-completed">Clear all</a>
     </footer>
@@ -145,7 +146,10 @@
           questions_data = App.questions_data["bblock"]; 
           $("#projecttype").html("Building Block Idea Collector");
         }
-
+        if (window.location.hash === "#paper") {
+          questions_data = App.questions_data["paper"];
+          $("#projecttype").html("Research Paper Idea Collector");
+        }
 
         //setup the current question view
         App.currqview = currqview = new App.CurrentQuestionView({  prompt: "What is your business idea?",
