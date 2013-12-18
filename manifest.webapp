@@ -1,0 +1,17 @@
+{
+  "version": "0.1",
+  "name": "ideacollector",
+  "description": "An app for collecting your business ideas.",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/images/icons/idea-16.png",
+    "48": "/images/icons/idea-48.png",
+    "128": "/images/icons/idea-128.png"
+  },
+  "developer": {
+    "name": "Ivan Savov",
+    "url": "http://www.cs.mcgill.ca/~isavov/"
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "en"
+}
